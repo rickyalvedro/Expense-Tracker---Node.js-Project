@@ -31,6 +31,7 @@ const requestHandler = (req, res) => {
         if (err) {
           console.log(err);
         }
+
         res.statusCode = 302;
         res.setHeader("Location", "/");
         return res.end();
